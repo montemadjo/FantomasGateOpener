@@ -10,7 +10,7 @@ namespace FantomasGateOpener
 {
     public static class HelperClass
     {
-        public static void AppendText(this RichTextBox box, string text, string color)
+        public static void AppendText(this RichTextBox box, string text, string color, bool addTime = false)
         {
             BrushConverter bc = new BrushConverter();
 
@@ -18,7 +18,14 @@ namespace FantomasGateOpener
             {
                 // your code here.
                 TextRange tr = new TextRange(box.Document.ContentEnd, box.Document.ContentEnd);
-                tr.Text = text;
+                if (addTime)
+                {
+                    tr.Text = "\r" + DateTime.Now.ToLocalTime() + ": " + text;
+                }
+                else
+                {
+                    tr.Text = "\r" + text;
+                }
                 try
                 {
                     tr.ApplyPropertyValue(TextElement.ForegroundProperty,
