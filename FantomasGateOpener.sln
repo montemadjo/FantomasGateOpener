@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FantomasGateOpener", "FantomasGateOpener\FantomasGateOpener.csproj", "{52729737-70CB-4634-AB96-3952291D58BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52729737-70CB-4634-AB96-3952291D58BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52729737-70CB-4634-AB96-3952291D58BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52729737-70CB-4634-AB96-3952291D58BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52729737-70CB-4634-AB96-3952291D58BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B851EF4C-DD69-4E49-9558-2E9A7329EA60}
+	EndGlobalSection
+EndGlobal
