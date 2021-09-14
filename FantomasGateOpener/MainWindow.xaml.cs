@@ -1,5 +1,6 @@
 ﻿using Microsoft.Azure.Devices;
 using System;
+using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
@@ -13,7 +14,7 @@ namespace FantomasGateOpener
     {
         // Connection string for your IoT Hub
         // az iot hub show-connection-string --hub-name {your iot hub name} --policy-name service
-        private static string s_connectionString = "HostName=maximus.azure-devices.net;SharedAccessKeyName=service;SharedAccessKey=2HPCBmrIaPnTtU4nX0zgRbxuqwmkol88k9pvv3ZMfCA=";
+        private static string s_connectionString = ConfigurationManager.AppSettings["azureIotConnectionString"];
 
         private static ServiceClient s_serviceClient;
 
