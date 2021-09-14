@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FantomasGateOpener"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Fantomas - gate opener" Height="450" Width="800">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="Click to open the remote gate" />
+        <Button Grid.Row="1" Name="OpenGateButton" Content="Open Gate" Click="OpenGateButton_Click"></Button>
+        <!--Logging konzola-->
+        <RichTextBox Grid.Row="2" Grid.ColumnSpan="4" x:Name="rtbLog" ScrollViewer.VerticalScrollBarVisibility="Auto" IsReadOnly="True" Background="Black" Margin="2" />
     </Grid>
 </Window>
